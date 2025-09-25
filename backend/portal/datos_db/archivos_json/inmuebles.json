@@ -1,0 +1,422 @@
+[
+  {
+    "model": "portal.inmueble",
+    "pk": 1,
+    "fields": {
+      "propietario": 1,
+      "nombre": "Inmueble de prueba 1",
+      "descripcion": "Descripción de prueba para el inmueble 1.",
+      "m2_construidos": 52,
+      "m2_totales": 103,
+      "estacionamientos": 1,
+      "habitaciones": 2,
+      "banos": 2,
+      "direccion": "Calle Falsa 101",
+      "precio_mensual": "310000",
+      "region": 2,
+      "comuna": 5,
+      "tipo_de_inmueble": "DEPARTAMENTO",
+      "creado": "2025-09-09T12:00:00+00:00",
+      "actualizado": "2025-09-09T12:00:00+00:00"
+    }
+  },
+  {
+    "model": "portal.inmueble",
+    "pk": 2,
+    "fields": {
+      "propietario": 1,
+      "nombre": "Inmueble de prueba 2",
+      "descripcion": "Descripción de prueba para el inmueble 2.",
+      "m2_construidos": 54,
+      "m2_totales": 106,
+      "estacionamientos": 2,
+      "habitaciones": 3,
+      "banos": 3,
+      "direccion": "Calle Falsa 102",
+      "precio_mensual": "320000",
+      "region": 2,
+      "comuna": 5,
+      "tipo_de_inmueble": "PARCELA",
+      "creado": "2025-09-09T12:00:00+00:00",
+      "actualizado": "2025-09-09T12:00:00+00:00"
+    }
+  },
+  {
+    "model": "portal.inmueble",
+    "pk": 3,
+    "fields": {
+      "propietario": 1,
+      "nombre": "Inmueble de prueba 3",
+      "descripcion": "Descripción de prueba para el inmueble 3.",
+      "m2_construidos": 56,
+      "m2_totales": 109,
+      "estacionamientos": 0,
+      "habitaciones": 4,
+      "banos": 1,
+      "direccion": "Calle Falsa 103",
+      "precio_mensual": "330000",
+      "region": 2,
+      "comuna": 5,
+      "tipo_de_inmueble": "CASA",
+      "creado": "2025-09-09T12:00:00+00:00",
+      "actualizado": "2025-09-09T12:00:00+00:00"
+    }
+  },
+  {
+    "model": "portal.inmueble",
+    "pk": 4,
+    "fields": {
+      "propietario": 1,
+      "nombre": "Inmueble de prueba 4",
+      "descripcion": "Descripción de prueba para el inmueble 4.",
+      "m2_construidos": 58,
+      "m2_totales": 112,
+      "estacionamientos": 1,
+      "habitaciones": 5,
+      "banos": 2,
+      "direccion": "Calle Falsa 104",
+      "precio_mensual": "340000",
+      "region": 2,
+      "comuna": 5,
+      "tipo_de_inmueble": "DEPARTAMENTO",
+      "creado": "2025-09-09T12:00:00+00:00",
+      "actualizado": "2025-09-09T12:00:00+00:00"
+    }
+  },
+  {
+    "model": "portal.inmueble",
+    "pk": 5,
+    "fields": {
+      "propietario": 1,
+      "nombre": "Inmueble de prueba 5",
+      "descripcion": "Descripción de prueba para el inmueble 5.",
+      "m2_construidos": 60,
+      "m2_totales": 115,
+      "estacionamientos": 2,
+      "habitaciones": 1,
+      "banos": 3,
+      "direccion": "Calle Falsa 105",
+      "precio_mensual": "350000",
+      "region": 2,
+      "comuna": 5,
+      "tipo_de_inmueble": "PARCELA",
+      "creado": "2025-09-09T12:00:00+00:00",
+      "actualizado": "2025-09-09T12:00:00+00:00"
+    }
+  },
+  {
+    "model": "portal.inmueble",
+    "pk": 6,
+    "fields": {
+      "propietario": 1,
+      "nombre": "Inmueble de prueba 6",
+      "descripcion": "Descripción de prueba para el inmueble 6.",
+      "m2_construidos": 62,
+      "m2_totales": 118,
+      "estacionamientos": 0,
+      "habitaciones": 2,
+      "banos": 1,
+      "direccion": "Calle Falsa 106",
+      "precio_mensual": "360000",
+      "region": 2,
+      "comuna": 5,
+      "tipo_de_inmueble": "CASA",
+      "creado": "2025-09-09T12:00:00+00:00",
+      "actualizado": "2025-09-09T12:00:00+00:00"
+    }
+  },
+  {
+    "model": "portal.inmueble",
+    "pk": 7,
+    "fields": {
+      "propietario": 1,
+      "nombre": "Inmueble de prueba 7",
+      "descripcion": "Descripción de prueba para el inmueble 7.",
+      "m2_construidos": 64,
+      "m2_totales": 121,
+      "estacionamientos": 1,
+      "habitaciones": 3,
+      "banos": 2,
+      "direccion": "Calle Falsa 107",
+      "precio_mensual": "370000",
+      "region": 2,
+      "comuna": 5,
+      "tipo_de_inmueble": "DEPARTAMENTO",
+      "creado": "2025-09-09T12:00:00+00:00",
+      "actualizado": "2025-09-09T12:00:00+00:00"
+    }
+  },
+  {
+    "model": "portal.inmueble",
+    "pk": 8,
+    "fields": {
+      "propietario": 1,
+      "nombre": "Inmueble de prueba 8",
+      "descripcion": "Descripción de prueba para el inmueble 8.",
+      "m2_construidos": 66,
+      "m2_totales": 124,
+      "estacionamientos": 2,
+      "habitaciones": 4,
+      "banos": 3,
+      "direccion": "Calle Falsa 108",
+      "precio_mensual": "380000",
+      "region": 2,
+      "comuna": 5,
+      "tipo_de_inmueble": "PARCELA",
+      "creado": "2025-09-09T12:00:00+00:00",
+      "actualizado": "2025-09-09T12:00:00+00:00"
+    }
+  },
+  {
+    "model": "portal.inmueble",
+    "pk": 9,
+    "fields": {
+      "propietario": 1,
+      "nombre": "Inmueble de prueba 9",
+      "descripcion": "Descripción de prueba para el inmueble 9.",
+      "m2_construidos": 68,
+      "m2_totales": 127,
+      "estacionamientos": 0,
+      "habitaciones": 5,
+      "banos": 1,
+      "direccion": "Calle Falsa 109",
+      "precio_mensual": "390000",
+      "region": 2,
+      "comuna": 5,
+      "tipo_de_inmueble": "CASA",
+      "creado": "2025-09-09T12:00:00+00:00",
+      "actualizado": "2025-09-09T12:00:00+00:00"
+    }
+  },
+  {
+    "model": "portal.inmueble",
+    "pk": 10,
+    "fields": {
+      "propietario": 1,
+      "nombre": "Inmueble de prueba 10",
+      "descripcion": "Descripción de prueba para el inmueble 10.",
+      "m2_construidos": 70,
+      "m2_totales": 130,
+      "estacionamientos": 1,
+      "habitaciones": 1,
+      "banos": 2,
+      "direccion": "Calle Falsa 110",
+      "precio_mensual": "400000",
+      "region": 2,
+      "comuna": 5,
+      "tipo_de_inmueble": "DEPARTAMENTO",
+      "creado": "2025-09-09T12:00:00+00:00",
+      "actualizado": "2025-09-09T12:00:00+00:00"
+    }
+  },
+  {
+    "model": "portal.inmueble",
+    "pk": 11,
+    "fields": {
+      "propietario": 1,
+      "nombre": "Inmueble de prueba 11",
+      "descripcion": "Descripción de prueba para el inmueble 11.",
+      "m2_construidos": 72,
+      "m2_totales": 133,
+      "estacionamientos": 2,
+      "habitaciones": 2,
+      "banos": 3,
+      "direccion": "Calle Falsa 111",
+      "precio_mensual": "410000",
+      "region": 2,
+      "comuna": 5,
+      "tipo_de_inmueble": "PARCELA",
+      "creado": "2025-09-09T12:00:00+00:00",
+      "actualizado": "2025-09-09T12:00:00+00:00"
+    }
+  },
+  {
+    "model": "portal.inmueble",
+    "pk": 12,
+    "fields": {
+      "propietario": 1,
+      "nombre": "Inmueble de prueba 12",
+      "descripcion": "Descripción de prueba para el inmueble 12.",
+      "m2_construidos": 74,
+      "m2_totales": 136,
+      "estacionamientos": 0,
+      "habitaciones": 3,
+      "banos": 1,
+      "direccion": "Calle Falsa 112",
+      "precio_mensual": "420000",
+      "region": 2,
+      "comuna": 5,
+      "tipo_de_inmueble": "CASA",
+      "creado": "2025-09-09T12:00:00+00:00",
+      "actualizado": "2025-09-09T12:00:00+00:00"
+    }
+  },
+  {
+    "model": "portal.inmueble",
+    "pk": 13,
+    "fields": {
+      "propietario": 1,
+      "nombre": "Inmueble de prueba 13",
+      "descripcion": "Descripción de prueba para el inmueble 13.",
+      "m2_construidos": 76,
+      "m2_totales": 139,
+      "estacionamientos": 1,
+      "habitaciones": 4,
+      "banos": 2,
+      "direccion": "Calle Falsa 113",
+      "precio_mensual": "430000",
+      "region": 2,
+      "comuna": 5,
+      "tipo_de_inmueble": "DEPARTAMENTO",
+      "creado": "2025-09-09T12:00:00+00:00",
+      "actualizado": "2025-09-09T12:00:00+00:00"
+    }
+  },
+  {
+    "model": "portal.inmueble",
+    "pk": 14,
+    "fields": {
+      "propietario": 1,
+      "nombre": "Inmueble de prueba 14",
+      "descripcion": "Descripción de prueba para el inmueble 14.",
+      "m2_construidos": 78,
+      "m2_totales": 142,
+      "estacionamientos": 2,
+      "habitaciones": 5,
+      "banos": 3,
+      "direccion": "Calle Falsa 114",
+      "precio_mensual": "440000",
+      "region": 2,
+      "comuna": 5,
+      "tipo_de_inmueble": "PARCELA",
+      "creado": "2025-09-09T12:00:00+00:00",
+      "actualizado": "2025-09-09T12:00:00+00:00"
+    }
+  },
+  {
+    "model": "portal.inmueble",
+    "pk": 15,
+    "fields": {
+      "propietario": 1,
+      "nombre": "Inmueble de prueba 15",
+      "descripcion": "Descripción de prueba para el inmueble 15.",
+      "m2_construidos": 80,
+      "m2_totales": 145,
+      "estacionamientos": 0,
+      "habitaciones": 1,
+      "banos": 1,
+      "direccion": "Calle Falsa 115",
+      "precio_mensual": "450000",
+      "region": 2,
+      "comuna": 5,
+      "tipo_de_inmueble": "CASA",
+      "creado": "2025-09-09T12:00:00+00:00",
+      "actualizado": "2025-09-09T12:00:00+00:00"
+    }
+  },
+  {
+    "model": "portal.inmueble",
+    "pk": 16,
+    "fields": {
+      "propietario": 1,
+      "nombre": "Inmueble de prueba 16",
+      "descripcion": "Descripción de prueba para el inmueble 16.",
+      "m2_construidos": 82,
+      "m2_totales": 148,
+      "estacionamientos": 1,
+      "habitaciones": 2,
+      "banos": 2,
+      "direccion": "Calle Falsa 116",
+      "precio_mensual": "460000",
+      "region": 2,
+      "comuna": 5,
+      "tipo_de_inmueble": "DEPARTAMENTO",
+      "creado": "2025-09-09T12:00:00+00:00",
+      "actualizado": "2025-09-09T12:00:00+00:00"
+    }
+  },
+  {
+    "model": "portal.inmueble",
+    "pk": 17,
+    "fields": {
+      "propietario": 1,
+      "nombre": "Inmueble de prueba 17",
+      "descripcion": "Descripción de prueba para el inmueble 17.",
+      "m2_construidos": 84,
+      "m2_totales": 151,
+      "estacionamientos": 2,
+      "habitaciones": 3,
+      "banos": 3,
+      "direccion": "Calle Falsa 117",
+      "precio_mensual": "470000",
+      "region": 2,
+      "comuna": 5,
+      "tipo_de_inmueble": "PARCELA",
+      "creado": "2025-09-09T12:00:00+00:00",
+      "actualizado": "2025-09-09T12:00:00+00:00"
+    }
+  },
+  {
+    "model": "portal.inmueble",
+    "pk": 18,
+    "fields": {
+      "propietario": 1,
+      "nombre": "Inmueble de prueba 18",
+      "descripcion": "Descripción de prueba para el inmueble 18.",
+      "m2_construidos": 86,
+      "m2_totales": 154,
+      "estacionamientos": 0,
+      "habitaciones": 4,
+      "banos": 1,
+      "direccion": "Calle Falsa 118",
+      "precio_mensual": "480000",
+      "region": 2,
+      "comuna": 5,
+      "tipo_de_inmueble": "CASA",
+      "creado": "2025-09-09T12:00:00+00:00",
+      "actualizado": "2025-09-09T12:00:00+00:00"
+    }
+  },
+  {
+    "model": "portal.inmueble",
+    "pk": 19,
+    "fields": {
+      "propietario": 1,
+      "nombre": "Inmueble de prueba 19",
+      "descripcion": "Descripción de prueba para el inmueble 19.",
+      "m2_construidos": 88,
+      "m2_totales": 157,
+      "estacionamientos": 1,
+      "habitaciones": 5,
+      "banos": 2,
+      "direccion": "Calle Falsa 119",
+      "precio_mensual": "490000",
+      "region": 2,
+      "comuna": 5,
+      "tipo_de_inmueble": "DEPARTAMENTO",
+      "creado": "2025-09-09T12:00:00+00:00",
+      "actualizado": "2025-09-09T12:00:00+00:00"
+    }
+  },
+  {
+    "model": "portal.inmueble",
+    "pk": 20,
+    "fields": {
+      "propietario": 1,
+      "nombre": "Inmueble de prueba 20",
+      "descripcion": "Descripción de prueba para el inmueble 20.",
+      "m2_construidos": 90,
+      "m2_totales": 160,
+      "estacionamientos": 2,
+      "habitaciones": 1,
+      "banos": 3,
+      "direccion": "Calle Falsa 120",
+      "precio_mensual": "500000",
+      "region": 2,
+      "comuna": 5,
+      "tipo_de_inmueble": "PARCELA",
+      "creado": "2025-09-09T12:00:00+00:00",
+      "actualizado": "2025-09-09T12:00:00+00:00"
+    }
+  }
+]

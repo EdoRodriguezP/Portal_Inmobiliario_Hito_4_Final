@@ -1,0 +1,255 @@
+{% extends "web/base.html" %}
+{% block title %}{{ object|default_if_none:"Nuevo inmueble" }} | Alquiler{% endblock %}
+
+{% block content %}
+<section class="container container-narrow py-4">
+  <div class="card shadow-lg border-0 overflow-hidden">
+    <div class="card-header bg-primary text-white py-3">
+      <h4 class="mb-0"><i class="fas fa-home me-2"></i>{{ object|default_if_none:"Nuevo inmueble" }}</h4>
+    </div>
+    <div class="card-body p-4">
+      <form method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+        {% csrf_token %}
+        
+        <div class="row mb-4">
+          <div class="col-md-8">
+            <h5 class="text-primary mb-3 pb-2 border-bottom"><i class="fas fa-info-circle me-2"></i>Información básica</h5>
+            
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="{{ form.nombre.id_for_label }}" class="form-label fw-bold">{{ form.nombre.label }}</label>
+                {{ form.nombre }}
+                <div class="invalid-feedback">Por favor ingresa un nombre para el inmueble.</div>
+              </div>
+              
+              <div class="col-md-6 mb-3">
+                <label for="{{ form.tipo_de_inmueble.id_for_label }}" class="form-label fw-bold">{{ form.tipo_de_inmueble.label }}</label>
+                {{ form.tipo_de_inmueble }}
+              </div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="{{ form.descripcion.id_for_label }}" class="form-label fw-bold">{{ form.descripcion.label }}</label>
+              {{ form.descripcion }}
+            </div>
+            
+            <div class="mb-3">
+              <label for="{{ form.precio_mensual.id_for_label }}" class="form-label fw-bold">{{ form.precio_mensual.label }}</label>
+              <div class="input-group">
+                <span class="input-group-text">$</span>
+                {{ form.precio_mensual }}
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <h5 class="text-primary mb-3 pb-2 border-bottom"><i class="fas fa-image me-2"></i>Imagen del inmueble</h5>
+            
+          </div>
+        </div>
+        
+        <h5 class="text-primary mb-3 pb-2 border-bottom"><i class="fas fa-ruler-combined me-2"></i>Características</h5>
+        <div class="row mb-4">
+          <div class="col-md-3 col-6 mb-3">
+            <label for="{{ form.m2_construidos.id_for_label }}" class="form-label fw-bold">{{ form.m2_construidos.label }}</label>
+            <div class="input-group">
+              {{ form.m2_construidos }}
+              <span class="input-group-text">m²</span>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-6 mb-3">
+            <label for="{{ form.m2_totales.id_for_label }}" class="form-label fw-bold">{{ form.m2_totales.label }}</label>
+            <div class="input-group">
+              {{ form.m2_totales }}
+              <span class="input-group-text">m²</span>
+            </div>
+          </div>
+          
+          <div class="col-md-2 col-4 mb-3">
+            <label for="{{ form.habitaciones.id_for_label }}" class="form-label fw-bold">{{ form.habitaciones.label }}</label>
+            {{ form.habitaciones }}
+          </div>
+          
+          <div class="col-md-2 col-4 mb-3">
+            <label for="{{ form.banos.id_for_label }}" class="form-label fw-bold">{{ form.banos.label }}</label>
+            {{ form.banos }}
+          </div>
+          
+          <div class="col-md-2 col-4 mb-3">
+            <label for="{{ form.estacionamientos.id_for_label }}" class="form-label fw-bold">{{ form.estacionamientos.label }}</label>
+            {{ form.estacionamientos }}
+          </div>
+        </div>
+        
+        <h5 class="text-primary mb-3 pb-2 border-bottom"><i class="fas fa-map-marker-alt me-2"></i>Ubicación</h5>
+        <div class="row mb-4">
+          <div class="col-md-6 mb-3">
+            <label for="{{ form.direccion.id_for_label }}" class="form-label fw-bold">{{ form.direccion.label }}</label>
+            {{ form.direccion }}
+          </div>
+          
+          <div class="col-md-3 mb-3">
+            <label for="{{ form.region.id_for_label }}" class="form-label fw-bold">{{ form.region.label }}</label>
+            {{ form.region }}
+          </div>
+          
+          <div class="col-md-3 mb-3">
+            <label for="{{ form.comuna.id_for_label }}" class="form-label fw-bold">{{ form.comuna.label }}</label>
+            {{ form.comuna }}
+          </div>
+        </div>
+        
+        <h5 class="text-primary mb-3 pb-2 border-bottom"><i class="fas fa-images me-2"></i>Imágenes adicionales</h5>
+        <div class="row mb-4" id="imagenes-formset">
+          {{ formset.management_form }}
+          {% for f in formset %}
+            <div class="col-md-4 mb-3 imagen-form">
+              {{ f.imagen.label_tag }} {{ f.imagen }}
+              {{ f.orden.label_tag }} {{ f.orden }}
+              {% if f.instance.imagen %}
+                <img src="{{ f.instance.imagen.url }}" class="img-thumbnail mt-2" style="max-width: 150px;">
+              {% endif %}
+              {{ f.DELETE }} Eliminar
+            </div>
+          {% endfor %}
+        </div>
+        <div id="empty-form" style="display:none;">
+          {% with f=formset.empty_form %}
+            <div class="col-md-4 mb-3 imagen-form">
+              {{ f.imagen.label_tag }} {{ f.imagen }}
+              {{ f.orden.label_tag }} {{ f.orden }}
+              {{ f.DELETE }} Eliminar
+            </div>
+          {% endwith %}
+        </div>
+        <button type="button" class="btn btn-outline-primary" id="add-image-btn">Agregar otra foto</button>
+        
+        <div class="d-flex gap-2 mt-4 pt-3 border-top">
+          <button type="submit" class="btn btn-primary px-4">
+            <i class="fas fa-save me-1"></i> Guardar
+          </button>
+          <a href="{% url 'perfil_inmueble_list' %}" class="btn btn-outline-secondary px-4">
+            <i class="fas fa-times me-1"></i> Cancelar
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Script para cargar comunas según región seleccionada
+  const regionSelect = document.getElementById("id_region");
+  const comunaSelect = document.getElementById("id_comuna");
+  
+  if (regionSelect) {
+    regionSelect.addEventListener("change", function() {
+      const regionId = this.value;
+      fetch(`/ajax/comunas/?region_id=${regionId}`)
+        .then(response => response.json())
+        .then(data => {
+          comunaSelect.innerHTML = "";
+          data.forEach(comuna => {
+            const option = document.createElement("option");
+            option.value = comuna.id;
+            option.textContent = comuna.nombre;
+            comunaSelect.appendChild(option);
+          });
+        });
+    });
+  }
+  
+  // Validación básica de formulario
+  const forms = document.querySelectorAll('.needs-validation');
+  Array.from(forms).forEach(function(form) {
+    form.addEventListener('submit', function(event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  });
+  
+  // Vista previa de imagen
+  const imagenInput = document.getElementById("id_imagen");
+  if (imagenInput) {
+    imagenInput.addEventListener("change", function(e) {
+      const file = e.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          document.querySelector(".bg-light").innerHTML = 
+            `<img src="${e.target.result}" class="img-fluid rounded" alt="Vista previa">`;
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+  }
+  
+  // Aplicar clases de Bootstrap a los campos del formulario
+  const formControls = document.querySelectorAll('input, select, textarea');
+  formControls.forEach(control => {
+    control.classList.add('form-control');
+  });
+  
+  // Aplicar clases específicas a los selects
+  const selects = document.querySelectorAll('select');
+  selects.forEach(select => {
+    select.classList.add('form-select');
+  });
+  
+  // Botón para agregar más imágenes
+  const addBtn = document.getElementById("add-image-btn");
+  const formsetDiv = document.getElementById("imagenes-formset");
+  const totalForms = document.getElementById("id_imageninmueble_set-TOTAL_FORMS");
+  const maxForms = document.getElementById("id_imageninmueble_set-MAX_NUM_FORMS");
+  const emptyFormDiv = document.getElementById("empty-form");
+
+  if (addBtn && formsetDiv && totalForms && maxForms && emptyFormDiv) {
+    addBtn.addEventListener("click", function() {
+      const forms = formsetDiv.querySelectorAll(".imagen-form");
+      const formIdx = parseInt(totalForms.value);
+      if (formIdx < parseInt(maxForms.value)) {
+        // Clona el formulario vacío
+        let newFormHtml = emptyFormDiv.innerHTML.replace(/__prefix__/g, formIdx);
+        // Crea un elemento temporal para convertir el HTML en nodo
+        let tempDiv = document.createElement('div');
+        tempDiv.innerHTML = newFormHtml;
+        let newForm = tempDiv.firstElementChild;
+        formsetDiv.appendChild(newForm);
+        totalForms.value = formIdx + 1;
+      }
+    });
+  }
+
+  // Botón eliminar: marca el checkbox DELETE
+  document.addEventListener("click", function(e) {
+    if (e.target && e.target.type === "checkbox" && e.target.name.includes("DELETE")) {
+      // No necesitas hacer nada extra, Django lo procesa si el checkbox está marcado
+    }
+  });
+});
+</script>
+
+<style>
+/* CSS mínimo para pequeños ajustes */
+.card {
+  border-radius: 0.8rem;
+}
+
+.card-header {
+  border-radius: 0.8rem 0.8rem 0 0 !important;
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+}
+
+.border-bottom {
+  border-color: #dee2e6 !important;
+}
+</style>
+{% endblock %}

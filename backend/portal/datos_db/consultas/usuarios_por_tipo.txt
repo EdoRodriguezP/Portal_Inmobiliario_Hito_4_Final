@@ -1,0 +1,15 @@
+Tipo de usuario: Arrendatario
+  - Usuario: admin, Nombres:  , Contraseña: pbkdf2_sha256$600000$ZiymewVSzb8CeTyx3F6r9s$LPkrNlD/XdSrULJ0QMMRsrh5yDtH4iQtAkWELaaMOOI= 
+
+Tipo de usuario: Arrendador
+  - Usuario: arrendador1, Nombres: Nombre1 Apellido1, Contraseña: pbkdf2_sha256$260000$test$abcdefghijklmnopqrstuv== 
+  - Usuario: arrendador2, Nombres: Nombre2 Apellido2, Contraseña: pbkdf2_sha256$260000$test$abcdefghijklmnopqrstuv== 
+  - Usuario: arrendador3, Nombres: Nombre3 Apellido3, Contraseña: pbkdf2_sha256$260000$test$abcdefghijklmnopqrstuv== 
+  - Usuario: arrendador4, Nombres: Nombre4 Apellido4, Contraseña: pbkdf2_sha256$260000$test$abcdefghijklmnopqrstuv== 
+  - Usuario: arrendador5, Nombres: Nombre5 Apellido5, Contraseña: pbkdf2_sha256$260000$test$abcdefghijklmnopqrstuv== 
+  - Usuario: arrendador6, Nombres: Nombre6 Apellido6, Contraseña: pbkdf2_sha256$260000$test$abcdefghijklmnopqrstuv== 
+  - Usuario: arrendador7, Nombres: Nombre7 Apellido7, Contraseña: pbkdf2_sha256$260000$test$abcdefghijklmnopqrstuv== 
+  - Usuario: arrendador8, Nombres: Nombre8 Apellido8, Contraseña: pbkdf2_sha256$260000$test$abcdefghijklmnopqrstuv== 
+  - Usuario: arrendador9, Nombres: Nombre9 Apellido9, Contraseña: pbkdf2_sha256$260000$test$abcdefghijklmnopqrstuv== 
+  - Usuario: arrendador10, Nombres: Nombre10 Apellido10, Contraseña: pbkdf2_sha256$260000$test$abcdefghijklmnopqrstuv== 
+

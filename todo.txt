@@ -1,0 +1,95 @@
+templates boostrap para el register y el login 
+
+manejo de crud del arrendador
+
+proceso para solicitudes (aceptar rechazar etc)
+
+boostrap para el detalle
+
+cuando creamos un inmueble se genere con el user actual
+
+mejorar modelos agregando filefield (para documentos al  crear un inmueble) + permitir borrado de archivos 
+
+cuando una propiedad este arrendada cambiar estado a no disponible y quitar del lista principal (home)
+
+1. Crea una vista para obtener comunas por región (AJAX)
+Agrega una vista en views.py que retorne las comunas en formato JSON:
+
+
+from django.http import JsonResponse
+from .models import Comuna
+
+def comunas_por_region(request):
+    region_id = request.GET.get("region_id")
+    comunas = Comuna.objects.filter(region_id=region_id).values("id", "nombre")
+    return JsonResponse(list(comunas), safe=False)
+
+
+    Agrega la ruta en tu archivo urls.py:
+
+    from . import views
+
+urlpatterns = [
+    # ...otras rutas...
+    path("ajax/comunas/", views.comunas_por_region, name="comunas_por_region"),
+]
+
+
+2. Agrega IDs a los campos en tu formulario
+En tu template inmueble_form.html, asegúrate de que los campos tengan IDs únicos:
+
+// ...existing code...
+{{ form.region|as_widget(attrs={"id": "id_region"}) }}
+{{ form.comuna|as_widget(attrs={"id": "id_comuna"}) }}
+// ...existing code...
+
+
+3. Agrega el JavaScript para actualizar comunas
+Al final de tu template inmueble_form.html, agrega este bloque:
+
+
+{% block extra_js %}
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const regionSelect = document.getElementById("id_region");
+    const comunaSelect = document.getElementById("id_comuna");
+
+    regionSelect.addEventListener("change", function() {
+        const regionId = this.value;
+        fetch(`/ajax/comunas/?region_id=${regionId}`)
+            .then(response => response.json())
+            .then(data => {
+                comunaSelect.innerHTML = "";
+                data.forEach(comuna => {
+                    const option = document.createElement("option");
+                    option.value = comuna.id;
+                    option.textContent = comuna.nombre;
+                    comunaSelect.appendChild(option);
+                });
+            });
+    });
+});
+</script>
+{% endblock %}
+
+
+
+
+
+Debes agregar una validación en tu vista SolicitudArriendoCreateView para que el usuario no pueda solicitar arriendo de un inmueble que le pertenece.
+
+    def dispatch(self, request, *args, **kwargs):
+        self.inmueble = get_object_or_404(Inmueble, pk=kwargs["inmueble_pk"])
+        # Validación: no permitir que el propietario solicite su propio inmueble
+
+
+        if self.inmueble.propietario == request.user:
+            messages.error(request, "No puedes solicitar arriendo de tu propio inmueble.")
+            return redirect("home")
+        return super().dispatch(request, *args, **kwargs)
+
+¿Qué hace esto?
+
+Antes de mostrar el formulario, revisa si el usuario autenticado es el propietario del inmueble.
+Si lo es, muestra un mensaje de error y lo redirige (por ejemplo, a "home").
+Si no lo es, permite continuar normalmente.

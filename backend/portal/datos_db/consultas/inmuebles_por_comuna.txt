@@ -1,0 +1,1056 @@
+Comuna: Alhué
+  (Sin inmuebles)
+
+Comuna: Alto Biobío
+  (Sin inmuebles)
+
+Comuna: Alto del Carmen
+  (Sin inmuebles)
+
+Comuna: Alto Hospicio
+  (Sin inmuebles)
+
+Comuna: Ancud
+  (Sin inmuebles)
+
+Comuna: Andacollo
+  (Sin inmuebles)
+
+Comuna: Angol
+  (Sin inmuebles)
+
+Comuna: Antártica
+  (Sin inmuebles)
+
+Comuna: Antofagasta
+  (Sin inmuebles)
+
+Comuna: Antuco
+  (Sin inmuebles)
+
+Comuna: Arauco
+  (Sin inmuebles)
+
+Comuna: Arica
+  (Sin inmuebles)
+
+Comuna: Aysén
+  (Sin inmuebles)
+
+Comuna: Buin
+  (Sin inmuebles)
+
+Comuna: Bulnes
+  (Sin inmuebles)
+
+Comuna: Cabildo
+  (Sin inmuebles)
+
+Comuna: Cabo de Hornos
+  (Sin inmuebles)
+
+Comuna: Cabrero
+  (Sin inmuebles)
+
+Comuna: Calama
+  (Sin inmuebles)
+
+Comuna: Calbuco
+  (Sin inmuebles)
+
+Comuna: Caldera
+  (Sin inmuebles)
+
+Comuna: Calera de Tango
+  (Sin inmuebles)
+
+Comuna: Calle Larga
+  (Sin inmuebles)
+
+Comuna: Camarones
+  (Sin inmuebles)
+
+Comuna: Camiña
+  (Sin inmuebles)
+
+Comuna: Cañete
+  (Sin inmuebles)
+
+Comuna: Carahue
+  (Sin inmuebles)
+
+Comuna: Cartagena
+  (Sin inmuebles)
+
+Comuna: Casablanca
+  (Sin inmuebles)
+
+Comuna: Castro
+  (Sin inmuebles)
+
+Comuna: Catemu
+  (Sin inmuebles)
+
+Comuna: Cauquenes
+  (Sin inmuebles)
+
+Comuna: Cerrillos
+  (Sin inmuebles)
+
+Comuna: Cerro Navia
+  (Sin inmuebles)
+
+Comuna: Chaitén
+  (Sin inmuebles)
+
+Comuna: Chañaral
+  (Sin inmuebles)
+
+Comuna: Chanco
+  (Sin inmuebles)
+
+Comuna: Chépica
+  (Sin inmuebles)
+
+Comuna: Chiguayante
+  (Sin inmuebles)
+
+Comuna: Chile Chico
+  (Sin inmuebles)
+
+Comuna: Chillán
+  (Sin inmuebles)
+
+Comuna: Chillán Viejo
+  (Sin inmuebles)
+
+Comuna: Chimbarongo
+  (Sin inmuebles)
+
+Comuna: Cholchol
+  (Sin inmuebles)
+
+Comuna: Chonchi
+  (Sin inmuebles)
+
+Comuna: Cisnes
+  (Sin inmuebles)
+
+Comuna: Cobquecura
+  (Sin inmuebles)
+
+Comuna: Cochamó
+  (Sin inmuebles)
+
+Comuna: Cochrane
+  (Sin inmuebles)
+
+Comuna: Codegua
+  (Sin inmuebles)
+
+Comuna: Coelemu
+  (Sin inmuebles)
+
+Comuna: Coihueco
+  (Sin inmuebles)
+
+Comuna: Coinco
+  (Sin inmuebles)
+
+Comuna: Colbún
+  (Sin inmuebles)
+
+Comuna: Colchane
+  (Sin inmuebles)
+
+Comuna: Colina
+  (Sin inmuebles)
+
+Comuna: Collipulli
+  (Sin inmuebles)
+
+Comuna: Coltauco
+  (Sin inmuebles)
+
+Comuna: Combarbalá
+  (Sin inmuebles)
+
+Comuna: Concepción
+  (Sin inmuebles)
+
+Comuna: Conchalí
+  (Sin inmuebles)
+
+Comuna: Concón
+  (Sin inmuebles)
+
+Comuna: Constitución
+  (Sin inmuebles)
+
+Comuna: Contulmo
+  (Sin inmuebles)
+
+Comuna: Copiapó
+  (Sin inmuebles)
+
+Comuna: Coquimbo
+  (Sin inmuebles)
+
+Comuna: Coronel
+  (Sin inmuebles)
+
+Comuna: Corral
+  (Sin inmuebles)
+
+Comuna: Coyhaique
+  (Sin inmuebles)
+
+Comuna: Cunco
+  (Sin inmuebles)
+
+Comuna: Curacautín
+  (Sin inmuebles)
+
+Comuna: Curacaví
+  (Sin inmuebles)
+
+Comuna: Curaco de Vélez
+  (Sin inmuebles)
+
+Comuna: Curanilahue
+  (Sin inmuebles)
+
+Comuna: Curarrehue
+  (Sin inmuebles)
+
+Comuna: Curepto
+  (Sin inmuebles)
+
+Comuna: Curicó
+  (Sin inmuebles)
+
+Comuna: Dalcahue
+  (Sin inmuebles)
+
+Comuna: Diego de Almagro
+  (Sin inmuebles)
+
+Comuna: Doñihue
+  (Sin inmuebles)
+
+Comuna: El Bosque
+  (Sin inmuebles)
+
+Comuna: El Carmen
+  (Sin inmuebles)
+
+Comuna: El Monte
+  (Sin inmuebles)
+
+Comuna: El Quisco
+  (Sin inmuebles)
+
+Comuna: El Tabo
+  (Sin inmuebles)
+
+Comuna: Empedrado
+  (Sin inmuebles)
+
+Comuna: Ercilla
+  (Sin inmuebles)
+
+Comuna: Estación Central
+  (Sin inmuebles)
+
+Comuna: Florida
+  (Sin inmuebles)
+
+Comuna: Freire
+  (Sin inmuebles)
+
+Comuna: Freirina
+  (Sin inmuebles)
+
+Comuna: Fresia
+  (Sin inmuebles)
+
+Comuna: Frutillar
+  (Sin inmuebles)
+
+Comuna: Futaleufú
+  (Sin inmuebles)
+
+Comuna: Futrono
+  (Sin inmuebles)
+
+Comuna: Galvarino
+  (Sin inmuebles)
+
+Comuna: General Lagos
+  (Sin inmuebles)
+
+Comuna: Gorbea
+  (Sin inmuebles)
+
+Comuna: Graneros
+  (Sin inmuebles)
+
+Comuna: Guaitecas
+  (Sin inmuebles)
+
+Comuna: Hijuelas
+  (Sin inmuebles)
+
+Comuna: Hualaihué
+  (Sin inmuebles)
+
+Comuna: Hualañé
+  (Sin inmuebles)
+
+Comuna: Hualpén
+  (Sin inmuebles)
+
+Comuna: Hualqui
+  (Sin inmuebles)
+
+Comuna: Huara
+  (Sin inmuebles)
+
+Comuna: Huasco
+  (Sin inmuebles)
+
+Comuna: Huechuraba
+  (Sin inmuebles)
+
+Comuna: Independencia
+  (Sin inmuebles)
+
+Comuna: Iquique
+  - Nombre: Inmueble de prueba 1
+    Descripción: Descripción de prueba para el inmueble 1.
+  - Nombre: Inmueble de prueba 2
+    Descripción: Descripción de prueba para el inmueble 2.
+  - Nombre: Inmueble de prueba 3
+    Descripción: Descripción de prueba para el inmueble 3.
+  - Nombre: Inmueble de prueba 4
+    Descripción: Descripción de prueba para el inmueble 4.
+  - Nombre: Inmueble de prueba 5
+    Descripción: Descripción de prueba para el inmueble 5.
+  - Nombre: Inmueble de prueba 6
+    Descripción: Descripción de prueba para el inmueble 6.
+  - Nombre: Inmueble de prueba 7
+    Descripción: Descripción de prueba para el inmueble 7.
+  - Nombre: Inmueble de prueba 8
+    Descripción: Descripción de prueba para el inmueble 8.
+  - Nombre: Inmueble de prueba 9
+    Descripción: Descripción de prueba para el inmueble 9.
+  - Nombre: Inmueble de prueba 10
+    Descripción: Descripción de prueba para el inmueble 10.
+  - Nombre: Inmueble de prueba 11
+    Descripción: Descripción de prueba para el inmueble 11.
+  - Nombre: Inmueble de prueba 12
+    Descripción: Descripción de prueba para el inmueble 12.
+  - Nombre: Inmueble de prueba 13
+    Descripción: Descripción de prueba para el inmueble 13.
+  - Nombre: Inmueble de prueba 14
+    Descripción: Descripción de prueba para el inmueble 14.
+  - Nombre: Inmueble de prueba 15
+    Descripción: Descripción de prueba para el inmueble 15.
+  - Nombre: Inmueble de prueba 16
+    Descripción: Descripción de prueba para el inmueble 16.
+  - Nombre: Inmueble de prueba 17
+    Descripción: Descripción de prueba para el inmueble 17.
+  - Nombre: Inmueble de prueba 18
+    Descripción: Descripción de prueba para el inmueble 18.
+  - Nombre: Inmueble de prueba 19
+    Descripción: Descripción de prueba para el inmueble 19.
+  - Nombre: Inmueble de prueba 20
+    Descripción: Descripción de prueba para el inmueble 20.
+
+Comuna: Isla de Maipo
+  (Sin inmuebles)
+
+Comuna: Isla de Pascua
+  (Sin inmuebles)
+
+Comuna: Juan Fernández
+  (Sin inmuebles)
+
+Comuna: La Calera
+  (Sin inmuebles)
+
+Comuna: La Cisterna
+  (Sin inmuebles)
+
+Comuna: La Cruz
+  (Sin inmuebles)
+
+Comuna: La Estrella
+  (Sin inmuebles)
+
+Comuna: La Florida
+  (Sin inmuebles)
+
+Comuna: Lago Ranco
+  (Sin inmuebles)
+
+Comuna: Lago Verde
+  (Sin inmuebles)
+
+Comuna: La Granja
+  (Sin inmuebles)
+
+Comuna: Laguna Blanca
+  (Sin inmuebles)
+
+Comuna: La Higuera
+  (Sin inmuebles)
+
+Comuna: Laja
+  (Sin inmuebles)
+
+Comuna: La Ligua
+  (Sin inmuebles)
+
+Comuna: Lampa
+  (Sin inmuebles)
+
+Comuna: Lanco
+  (Sin inmuebles)
+
+Comuna: La Pintana
+  (Sin inmuebles)
+
+Comuna: La Reina
+  (Sin inmuebles)
+
+Comuna: Las Cabras
+  (Sin inmuebles)
+
+Comuna: Las Condes
+  (Sin inmuebles)
+
+Comuna: La Serena
+  (Sin inmuebles)
+
+Comuna: La Unión
+  (Sin inmuebles)
+
+Comuna: Lautaro
+  (Sin inmuebles)
+
+Comuna: Lebu
+  (Sin inmuebles)
+
+Comuna: Licantén
+  (Sin inmuebles)
+
+Comuna: Limache
+  (Sin inmuebles)
+
+Comuna: Linares
+  (Sin inmuebles)
+
+Comuna: Litueche
+  (Sin inmuebles)
+
+Comuna: Llaillay
+  (Sin inmuebles)
+
+Comuna: Llanquihue
+  (Sin inmuebles)
+
+Comuna: Lo Barnechea
+  (Sin inmuebles)
+
+Comuna: Lo Espejo
+  (Sin inmuebles)
+
+Comuna: Lolol
+  (Sin inmuebles)
+
+Comuna: Loncoche
+  (Sin inmuebles)
+
+Comuna: Longaví
+  (Sin inmuebles)
+
+Comuna: Lonquimay
+  (Sin inmuebles)
+
+Comuna: Lo Prado
+  (Sin inmuebles)
+
+Comuna: Los Álamos
+  (Sin inmuebles)
+
+Comuna: Los Andes
+  (Sin inmuebles)
+
+Comuna: Los Ángeles
+  (Sin inmuebles)
+
+Comuna: Los Lagos
+  (Sin inmuebles)
+
+Comuna: Los Muermos
+  (Sin inmuebles)
+
+Comuna: Los Sauces
+  (Sin inmuebles)
+
+Comuna: Lota
+  (Sin inmuebles)
+
+Comuna: Lumaco
+  (Sin inmuebles)
+
+Comuna: Machalí
+  (Sin inmuebles)
+
+Comuna: Macul
+  (Sin inmuebles)
+
+Comuna: Máfil
+  (Sin inmuebles)
+
+Comuna: Maipú
+  (Sin inmuebles)
+
+Comuna: Malloa
+  (Sin inmuebles)
+
+Comuna: Marchihue
+  (Sin inmuebles)
+
+Comuna: María Elena
+  (Sin inmuebles)
+
+Comuna: María Pinto
+  (Sin inmuebles)
+
+Comuna: Mariquina
+  (Sin inmuebles)
+
+Comuna: Maule
+  (Sin inmuebles)
+
+Comuna: Maullín
+  (Sin inmuebles)
+
+Comuna: Mejillones
+  (Sin inmuebles)
+
+Comuna: Melipeuco
+  (Sin inmuebles)
+
+Comuna: Melipilla
+  (Sin inmuebles)
+
+Comuna: Molina
+  (Sin inmuebles)
+
+Comuna: Monte Patria
+  (Sin inmuebles)
+
+Comuna: Mostazal
+  (Sin inmuebles)
+
+Comuna: Mulchén
+  (Sin inmuebles)
+
+Comuna: Nacimiento
+  (Sin inmuebles)
+
+Comuna: Nancagua
+  (Sin inmuebles)
+
+Comuna: Natales
+  (Sin inmuebles)
+
+Comuna: Navidad
+  (Sin inmuebles)
+
+Comuna: Negrete
+  (Sin inmuebles)
+
+Comuna: Ninhue
+  (Sin inmuebles)
+
+Comuna: Ñiquén
+  (Sin inmuebles)
+
+Comuna: Nogales
+  (Sin inmuebles)
+
+Comuna: Nueva Imperial
+  (Sin inmuebles)
+
+Comuna: Ñuñoa
+  (Sin inmuebles)
+
+Comuna: O'Higgins
+  (Sin inmuebles)
+
+Comuna: Olivar
+  (Sin inmuebles)
+
+Comuna: Ollagüe
+  (Sin inmuebles)
+
+Comuna: Olmué
+  (Sin inmuebles)
+
+Comuna: Osorno
+  (Sin inmuebles)
+
+Comuna: Ovalle
+  (Sin inmuebles)
+
+Comuna: Padre Hurtado
+  (Sin inmuebles)
+
+Comuna: Padre Las Casas
+  (Sin inmuebles)
+
+Comuna: Paihuano
+  (Sin inmuebles)
+
+Comuna: Paillaco
+  (Sin inmuebles)
+
+Comuna: Paine
+  (Sin inmuebles)
+
+Comuna: Palena
+  (Sin inmuebles)
+
+Comuna: Palmilla
+  (Sin inmuebles)
+
+Comuna: Panguipulli
+  (Sin inmuebles)
+
+Comuna: Panquehue
+  (Sin inmuebles)
+
+Comuna: Papudo
+  (Sin inmuebles)
+
+Comuna: Paredones
+  (Sin inmuebles)
+
+Comuna: Parral
+  (Sin inmuebles)
+
+Comuna: Pedro Aguirre Cerda
+  (Sin inmuebles)
+
+Comuna: Pelarco
+  (Sin inmuebles)
+
+Comuna: Pelluhue
+  (Sin inmuebles)
+
+Comuna: Pemuco
+  (Sin inmuebles)
+
+Comuna: Peñaflor
+  (Sin inmuebles)
+
+Comuna: Peñalolén
+  (Sin inmuebles)
+
+Comuna: Pencahue
+  (Sin inmuebles)
+
+Comuna: Penco
+  (Sin inmuebles)
+
+Comuna: Peralillo
+  (Sin inmuebles)
+
+Comuna: Perquenco
+  (Sin inmuebles)
+
+Comuna: Peumo
+  (Sin inmuebles)
+
+Comuna: Pica
+  (Sin inmuebles)
+
+Comuna: Pichidegua
+  (Sin inmuebles)
+
+Comuna: Pichilemu
+  (Sin inmuebles)
+
+Comuna: Pirque
+  (Sin inmuebles)
+
+Comuna: Pitrufquén
+  (Sin inmuebles)
+
+Comuna: Placilla
+  (Sin inmuebles)
+
+Comuna: Portezuelo
+  (Sin inmuebles)
+
+Comuna: Porvenir
+  (Sin inmuebles)
+
+Comuna: Pozo Almonte
+  (Sin inmuebles)
+
+Comuna: Primavera
+  (Sin inmuebles)
+
+Comuna: Providencia
+  (Sin inmuebles)
+
+Comuna: Puchuncaví
+  (Sin inmuebles)
+
+Comuna: Pucón
+  (Sin inmuebles)
+
+Comuna: Pudahuel
+  (Sin inmuebles)
+
+Comuna: Puente Alto
+  (Sin inmuebles)
+
+Comuna: Puerto Montt
+  (Sin inmuebles)
+
+Comuna: Puerto Octay
+  (Sin inmuebles)
+
+Comuna: Puerto Varas
+  (Sin inmuebles)
+
+Comuna: Pumanque
+  (Sin inmuebles)
+
+Comuna: Punitaqui
+  (Sin inmuebles)
+
+Comuna: Punta Arenas
+  (Sin inmuebles)
+
+Comuna: Puqueldón
+  (Sin inmuebles)
+
+Comuna: Purén
+  (Sin inmuebles)
+
+Comuna: Purranque
+  (Sin inmuebles)
+
+Comuna: Putaendo
+  (Sin inmuebles)
+
+Comuna: Putre
+  (Sin inmuebles)
+
+Comuna: Puyehue
+  (Sin inmuebles)
+
+Comuna: Queilén
+  (Sin inmuebles)
+
+Comuna: Quellón
+  (Sin inmuebles)
+
+Comuna: Quemchi
+  (Sin inmuebles)
+
+Comuna: Quilaco
+  (Sin inmuebles)
+
+Comuna: Quilicura
+  (Sin inmuebles)
+
+Comuna: Quilleco
+  (Sin inmuebles)
+
+Comuna: Quillón
+  (Sin inmuebles)
+
+Comuna: Quillota
+  (Sin inmuebles)
+
+Comuna: Quilpué
+  (Sin inmuebles)
+
+Comuna: Quinchao
+  (Sin inmuebles)
+
+Comuna: Quinta de Tilcoco
+  (Sin inmuebles)
+
+Comuna: Quinta Normal
+  (Sin inmuebles)
+
+Comuna: Quintero
+  (Sin inmuebles)
+
+Comuna: Quirihue
+  (Sin inmuebles)
+
+Comuna: Rancagua
+  (Sin inmuebles)
+
+Comuna: Ránquil
+  (Sin inmuebles)
+
+Comuna: Rauco
+  (Sin inmuebles)
+
+Comuna: Recoleta
+  (Sin inmuebles)
+
+Comuna: Renaico
+  (Sin inmuebles)
+
+Comuna: Renca
+  (Sin inmuebles)
+
+Comuna: Rengo
+  (Sin inmuebles)
+
+Comuna: Requínoa
+  (Sin inmuebles)
+
+Comuna: Retiro
+  (Sin inmuebles)
+
+Comuna: Rinconada
+  (Sin inmuebles)
+
+Comuna: Río Bueno
+  (Sin inmuebles)
+
+Comuna: Río Claro
+  (Sin inmuebles)
+
+Comuna: Río Hurtado
+  (Sin inmuebles)
+
+Comuna: Río Ibáñez
+  (Sin inmuebles)
+
+Comuna: Río Negro
+  (Sin inmuebles)
+
+Comuna: Río Verde
+  (Sin inmuebles)
+
+Comuna: Romeral
+  (Sin inmuebles)
+
+Comuna: Saavedra
+  (Sin inmuebles)
+
+Comuna: Sagrada Familia
+  (Sin inmuebles)
+
+Comuna: San Antonio
+  (Sin inmuebles)
+
+Comuna: San Bernardo
+  (Sin inmuebles)
+
+Comuna: San Carlos
+  (Sin inmuebles)
+
+Comuna: San Clemente
+  (Sin inmuebles)
+
+Comuna: San Esteban
+  (Sin inmuebles)
+
+Comuna: San Fabián
+  (Sin inmuebles)
+
+Comuna: San Felipe
+  (Sin inmuebles)
+
+Comuna: San Fernando
+  (Sin inmuebles)
+
+Comuna: San Gregorio
+  (Sin inmuebles)
+
+Comuna: San Ignacio
+  (Sin inmuebles)
+
+Comuna: San Javier
+  (Sin inmuebles)
+
+Comuna: San Joaquín
+  (Sin inmuebles)
+
+Comuna: San José de Maipo
+  (Sin inmuebles)
+
+Comuna: San Juan de la Costa
+  (Sin inmuebles)
+
+Comuna: San Miguel
+  (Sin inmuebles)
+
+Comuna: San Nicolás
+  (Sin inmuebles)
+
+Comuna: San Pablo
+  (Sin inmuebles)
+
+Comuna: San Pedro
+  (Sin inmuebles)
+
+Comuna: San Pedro de Atacama
+  (Sin inmuebles)
+
+Comuna: San Pedro de la Paz
+  (Sin inmuebles)
+
+Comuna: San Rafael
+  (Sin inmuebles)
+
+Comuna: San Ramón
+  (Sin inmuebles)
+
+Comuna: San Rosendo
+  (Sin inmuebles)
+
+Comuna: Santa Bárbara
+  (Sin inmuebles)
+
+Comuna: Santa Cruz
+  (Sin inmuebles)
+
+Comuna: Santa Juana
+  (Sin inmuebles)
+
+Comuna: Santa María
+  (Sin inmuebles)
+
+Comuna: Santiago
+  (Sin inmuebles)
+
+Comuna: Santo Domingo
+  (Sin inmuebles)
+
+Comuna: San Vicente
+  (Sin inmuebles)
+
+Comuna: Sierra Gorda
+  (Sin inmuebles)
+
+Comuna: Talagante
+  (Sin inmuebles)
+
+Comuna: Talca
+  (Sin inmuebles)
+
+Comuna: Talcahuano
+  (Sin inmuebles)
+
+Comuna: Taltal
+  (Sin inmuebles)
+
+Comuna: Temuco
+  (Sin inmuebles)
+
+Comuna: Teno
+  (Sin inmuebles)
+
+Comuna: Teodoro Schmidt
+  (Sin inmuebles)
+
+Comuna: Tierra Amarilla
+  (Sin inmuebles)
+
+Comuna: Tiltil
+  (Sin inmuebles)
+
+Comuna: Timaukel
+  (Sin inmuebles)
+
+Comuna: Tirúa
+  (Sin inmuebles)
+
+Comuna: Tocopilla
+  (Sin inmuebles)
+
+Comuna: Toltén
+  (Sin inmuebles)
+
+Comuna: Tomé
+  (Sin inmuebles)
+
+Comuna: Torres del Paine
+  (Sin inmuebles)
+
+Comuna: Tortel
+  (Sin inmuebles)
+
+Comuna: Traiguén
+  (Sin inmuebles)
+
+Comuna: Treguaco
+  (Sin inmuebles)
+
+Comuna: Tucapel
+  (Sin inmuebles)
+
+Comuna: Valdivia
+  (Sin inmuebles)
+
+Comuna: Vallenar
+  (Sin inmuebles)
+
+Comuna: Valparaíso
+  (Sin inmuebles)
+
+Comuna: Vichuquén
+  (Sin inmuebles)
+
+Comuna: Victoria
+  (Sin inmuebles)
+
+Comuna: Vicuña
+  (Sin inmuebles)
+
+Comuna: Vilcún
+  (Sin inmuebles)
+
+Comuna: Villa Alegre
+  (Sin inmuebles)
+
+Comuna: Villa Alemana
+  (Sin inmuebles)
+
+Comuna: Villarrica
+  (Sin inmuebles)
+
+Comuna: Viña del Mar
+  (Sin inmuebles)
+
+Comuna: Vitacura
+  (Sin inmuebles)
+
+Comuna: Yerbas Buenas
+  (Sin inmuebles)
+
+Comuna: Yumbel
+  (Sin inmuebles)
+
+Comuna: Yungay
+  (Sin inmuebles)
+
+Comuna: Zapallar
+  (Sin inmuebles)
+

@@ -1,0 +1,211 @@
+{% extends "web/base.html" %}
+{% block title %}Registro | Alquiler{% endblock %}
+{% block content %}
+<section class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-10 col-xl-8">  <!-- Hacemos el contenedor más ancho -->
+      <div class="card shadow-lg border-0">
+        <div class="card-header bg-primary text-white text-center py-4">
+          <h3 class="mb-0"><i class="bi bi-person-plus me-2"></i>Modificar cuenta</h3>
+          <p class="mb-0 mt-2">Modificacion de datos personales</p>
+        </div>
+        <div class="card-body p-4 p-md-5">
+          <form method="post" novalidate class="needs-validation">
+            {% csrf_token %}
+            
+            {% if form.non_field_errors %}
+            <div class="alert alert-danger">
+              {% for error in form.non_field_errors %}
+                {{ error }}
+              {% endfor %}
+            </div>
+            {% endif %}
+            
+            <div class="row">
+              {% for field in form %}
+                <div class="col-12 col-md-{% if 'username' in field.name or 'email' in field.name or 'password2' in field.name %}12{% else %}6{% endif %} mb-3">
+                  <label for="{{ field.id_for_label }}" class="form-label fw-bold">
+                    {{ field.label }}
+                    {% if field.field.required %}<span class="text-danger">*</span>{% endif %}
+                  </label>
+                  
+                  {% if field.field.widget.input_type == 'select' %}
+                    {{ field }}
+                  {% else %}
+                    <div class="input-group">
+                      {{ field }}
+                      {% if 'password' in field.name %}
+                        <button class="btn btn-outline-secondary toggle-password" type="button">
+                          <i class="bi bi-eye"></i>
+                        </button>
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                  
+                  {% if field.help_text %}
+                    <div class="form-text">{{ field.help_text }}</div>
+                  {% endif %}
+                  
+                  {% if field.errors %}
+                    <div class="invalid-feedback d-block">
+                      {% for error in field.errors %}
+                        {{ error }}
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+            
+            <button class="btn btn-success w-100 py-2 fw-bold" type="submit">
+              <i class="bi bi-person-check me-2"></i> Modificar cuenta
+            </button>
+            <a class="btn btn-outline-danger w-100 mt-2 btn-soft" href="{% url 'perfil' %}">
+              <i class="bi bi-box-arrow-right me-1"></i> Cancelar
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Añadir clases de Bootstrap a los campos del formulario
+  const inputs = document.querySelectorAll('input:not([type="checkbox"]), select, textarea');
+  inputs.forEach(input => {
+    input.classList.add('form-control');
+    
+    // Validación en tiempo real
+    input.addEventListener('blur', function() {
+      this.classList.add('validated');
+      checkValidity(this);
+    });
+  });
+  
+  // Añadir clase a los selects
+  const selects = document.querySelectorAll('select');
+  selects.forEach(select => {
+    select.classList.add('form-select');
+  });
+  
+  // Añadir clase al checkbox
+  const checkbox = document.getElementById('termsCheck');
+  if (checkbox) {
+    checkbox.classList.add('form-check-input');
+  }
+  
+  // Funcionalidad para mostrar/ocultar contraseña
+  const toggleButtons = document.querySelectorAll('.toggle-password');
+  toggleButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const input = this.previousElementSibling;
+      const icon = this.querySelector('i');
+      
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.classList.remove('bi-eye');
+        icon.classList.add('bi-eye-slash');
+      } else {
+        input.type = 'password';
+        icon.classList.remove('bi-eye-slash');
+        icon.classList.add('bi-eye');
+      }
+    });
+  });
+  
+  // Validación del formulario
+  const form = document.querySelector('.needs-validation');
+  if (form) {
+    form.addEventListener('submit', function(event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+        
+        // Forzar validación de todos los campos
+        const fields = form.querySelectorAll('input, select, textarea');
+        fields.forEach(field => {
+          checkValidity(field);
+        });
+      }
+      
+      form.classList.add('was-validated');
+    }, false);
+  }
+  
+  function checkValidity(field) {
+    if (field.classList.contains('validated') || form.classList.contains('was-validated')) {
+      if (field.checkValidity()) {
+        field.classList.remove('is-invalid');
+        field.classList.add('is-valid');
+      } else {
+        field.classList.remove('is-valid');
+        field.classList.add('is-invalid');
+      }
+    }
+  }
+});
+</script>
+
+<style>
+.card {
+  border-radius: 1rem;
+}
+
+.card-header {
+  border-radius: 1rem 1rem 0 0 !important;
+}
+
+.form-control, .form-select {
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+.btn {
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+
+.toggle-password {
+  border-radius: 0 0.5rem 0.5rem 0 !important;
+}
+
+.invalid-feedback {
+  display: block;
+}
+
+/* Mejorar responsividad en móviles */
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1.5rem !important;
+  }
+  
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+/* Estilos para la validación */
+.was-validated .form-control:valid,
+.form-control.is-valid {
+  border-color: #198754;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  border-color: #dc3545;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath d='m5.8 3.6.4.4.4-.4'/%3e%3cpath d='M6 7v2'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+</style>
+{% endblock %}

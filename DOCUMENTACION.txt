@@ -1,0 +1,192 @@
+PORTAL INMOBILIARIO - DOCUMENTACIÓN
+
+1. DESCRIPCIÓN GENERAL
+
+Portal Inmobiliario es una plataforma web desarrollada en Django que permite a usuarios registrarse como Arrendatario o Arrendador, publicar inmuebles, filtrar por tipo, región y comuna, y gestionar solicitudes de arriendo. El sistema soporta autenticación, edición de perfil, gestión de inmuebles y solicitudes, y cuenta con un panel de administración.
+
+2. ARQUITECTURA DEL PROYECTO
+
+- Backend: Django 5, PostgreSQL, estructura modular por apps.
+- Frontend: Bootstrap 5, templates Django, JavaScript para interactividad.
+- Despliegue: Docker, Docker Compose, variables de entorno para configuración.
+- Archivos estáticos y media: Servidos correctamente en desarrollo y producción.
+
+3. MODELOS DE DATOS
+
+Region
+- nro_region: Código de la región (ej: "V").
+- nombre: Nombre de la región.
+
+Comuna
+- nombre: Nombre de la comuna.
+- region: FK a Region.
+
+Inmueble
+- propietario: FK a PerfilUser.
+- nombre, descripcion, imagen, m2_construidos, m2_totales, estacionamientos, habitaciones, banos, direccion, precio_mensual.
+- region, comuna: FK a Region y Comuna.
+- tipo_de_inmueble: Casa, Departamento, Parcela.
+
+SolicitudArriendo
+- inmueble: FK a Inmueble.
+- arrendatario: FK a PerfilUser.
+- mensaje, estado (Pendiente, Aceptada, Rechazada), creado, actualizado.
+
+PerfilUser (Custom User)
+- Hereda de AbstractUser.
+- tipo_usuario: Arrendatario o Arrendador.
+- rut, imagen.
+
+4. AUTENTICACIÓN Y USUARIOS
+
+- Registro: Formulario personalizado, selección de tipo de usuario.
+- Login/Logout: Usando vistas y formularios personalizados.
+- Edición de perfil: Vista y formulario para modificar datos personales e imagen.
+- Restricciones: Solo usuarios autenticados pueden acceder a ciertas vistas (decoradores y mixins).
+
+5. VISTAS Y FUNCIONALIDADES
+
+Home (HomeInmuebleListView)
+- Lista de inmuebles con paginación y filtros por tipo, región y comuna.
+- Filtros dinámicos usando AJAX para comunas según región.
+
+Perfil (PerfilView)
+- Muestra datos del usuario.
+- Arrendatario: Solicitudes enviadas, opción de cancelar si está pendiente.
+- Arrendador: Solicitudes recibidas, opción de aceptar/rechazar.
+
+CRUD de Inmuebles
+- Solo para arrendadores.
+- Crear, editar y eliminar inmuebles propios.
+
+Solicitudes de Arriendo
+- Crear solicitud desde el detalle de inmueble.
+- Cancelar solicitud si está pendiente.
+- Arrendador puede aceptar o rechazar solicitudes recibidas.
+
+6. TEMPLATES Y FRONTEND
+
+- Base: web/base.html con navbar, mensajes, footer y modal de login.
+- Home: web/home.html con filtros y cards de inmuebles.
+- Perfil: usuarios/perfil.html y usuarios/perfil_edit.html.
+- Inmuebles: Formularios y confirmaciones en perfil/inmueble_form.html, etc.
+- Solicitudes: inmuebles/solicitud_form.html.
+
+Estilos: Bootstrap 5, clases personalizadas, responsividad.
+Mensajes: Sistema de mensajes de Django para feedback al usuario.
+
+7. FILTRADO DINÁMICO DE INMUEBLES
+
+- Filtros: Por tipo, región y comuna.
+- AJAX: Al seleccionar una región, se cargan solo las comunas de esa región.
+- Reset: Botón para limpiar filtros y mostrar todos los inmuebles.
+
+8. GESTIÓN DE SOLICITUDES DE ARRIENDO
+
+- Arrendatario: Puede cancelar solicitudes pendientes.
+- Arrendador: Puede aceptar o rechazar solicitudes recibidas.
+- Estados: Pendiente, Aceptada, Rechazada.
+- Restricciones: No se puede cancelar una solicitud ya aceptada/rechazada.
+
+9. ADMINISTRACIÓN Y PANEL DE ADMIN
+
+- Admin Django: Personalizado para gestionar usuarios, regiones, comunas, inmuebles y solicitudes.
+- Filtros y búsquedas: En admin para regiones y comunas.
+
+10. DESPLIEGUE Y CONFIGURACIÓN
+
+Docker
+- Dockerfile: Define la imagen para el backend.
+- docker-compose.yml: Orquesta servicios de base de datos, pgAdmin y backend.
+- Variables de entorno: .env para credenciales y configuración.
+
+Archivos estáticos y media
+- STATICFILES_DIRS y MEDIA_ROOT configurados en settings.py.
+- En desarrollo: Servidos automáticamente.
+- En producción: Requiere configuración adicional (ej: nginx).
+
+11. VARIABLES DE ENTORNO
+
+Archivo .env:
+
+POSTGRES_DB=django_postgres
+POSTGRES_USER=user
+POSTGRES_PASSWORD=1234
+PGADMIN_DEFAULT_EMAIL=user@correo.cl
+PGADMIN_DEFAULT_PASSWORD=1234
+
+En producción, agrega SECRET_KEY y DEBUG=0.
+
+12. ESTRUCTURA DE CARPETAS
+
+backend/
+  ├── portal/
+  │   ├── models.py
+  │   ├── views.py
+  │   ├── urls.py
+  │   ├── form.py
+  │   ├── admin.py
+  │   └── ...
+  ├── proyecto/
+  │   ├── settings.py
+  │   ├── urls.py
+  │   └── ...
+  ├── templates/
+  │   ├── web/
+  │   ├── usuarios/
+  │   ├── perfil/
+  │   ├── inmuebles/
+  │   └── registration/
+  ├── static/
+  │   └── img/
+  ├── media/
+  │   ├── fotos_perfil/
+  │   └── inmuebles/
+  └── ...
+docker-compose.yml
+.env
+
+13. NOTAS Y BUENAS PRÁCTICAS
+
+- Seguridad: No exponer SECRET_KEY ni credenciales en el código.
+- Validaciones: Formularios con validaciones de Django.
+- Mensajes al usuario: Uso de messages para feedback.
+- Restricciones de acceso: Decoradores y mixins para proteger vistas.
+- Código limpio: Separación de lógica en vistas, modelos y formularios.
+- Escalabilidad: Fácil de extender para agregar nuevas funcionalidades.
+
+14. URLS PRINCIPALES
+
+Archivo backend/proyecto/urls.py:
+
+"""
+URL configuration for proyecto project.
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/5.2/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+from django.contrib import admin
+from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include("portal.urls")),]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+15. CONTACTO Y SOPORTE
+
+Para dudas o mejoras, contacta al equipo de desarrollo o revisa la documentación oficial de Django.

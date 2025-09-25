@@ -1,0 +1,172 @@
+{% extends "web/base.html" %}
+{% load static %}
+{% load humanize %}
+{% block title %}{{ inmueble.nombre }} | Detalle{% endblock %}
+
+{% block content %}
+<section class="container py-5">
+  <!-- Botones superiores -->
+  <div class="d-flex justify-content-between align-items-center sticky-top bg-white pb-2 mb-3" style="z-index: 1000;">
+    <a href="{% url 'home' %}" class="btn btn-outline-secondary">
+      <i class="bi bi-arrow-left"></i> Volver
+    </a>
+    {% if user.is_authenticated and user.tipo_usuario == "ARRENDATARIO" and inmueble.propietario != user %}
+      <a href="{% url 'solicitud_create_for_inmueble' inmueble.pk %}" class="btn btn-primary">
+        <i class="bi bi-envelope"></i> Solicitar arriendo
+      </a>
+    {% endif %}
+  </div>
+
+  <div class="row g-4">
+    <!-- Columna izquierda -->
+    <div class="col-lg-4">
+      <div class="card shadow-sm border-0 mb-3">
+        <div class="card-body">
+          <h2 class="fw-bold mb-2">{{ inmueble.nombre }}</h2>
+          <p class="text-muted mb-2">
+            <i class="bi bi-geo-alt"></i> {{ inmueble.comuna.nombre }}, {{ inmueble.region.nombre }}
+          </p>
+          <h4 class="text-primary fw-bold mb-3">${{ inmueble.precio_mensual|intcomma }} / mes</h4>
+          <span class="badge bg-primary">{{ inmueble.get_tipo_de_inmueble_display }}</span>
+        </div>
+      </div>
+
+      <div class="card shadow-sm border-0 mb-3">
+        <div class="card-body">
+          <h5 class="fw-bold mb-3">Características</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-door-closed me-2 text-primary"></i> Habitaciones: <b>{{ inmueble.habitaciones }}</b></li>
+            <li><i class="bi bi-shower me-2 text-primary"></i> Baños: <b>{{ inmueble.banos }}</b></li>
+            <li><i class="bi bi-car-front me-2 text-primary"></i> Estacionamientos: <b>{{ inmueble.estacionamientos }}</b></li>
+            <li><i class="bi bi-house me-2 text-primary"></i> Construidos: <b>{{ inmueble.m2_construidos }} m²</b></li>
+            <li><i class="bi bi-border-all me-2 text-primary"></i> Totales: <b>{{ inmueble.m2_totales }} m²</b></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Columna central: galería -->
+    <div class="col-lg-4">
+      <div class="card shadow-sm border-0 mb-3">
+        <div class="card-body">
+          <h5 class="fw-bold mb-3">Galería</h5>
+          {% if inmueble.imagenes.exists %}
+            <div class="row g-2">
+              {% for img in inmueble.imagenes.all %}
+                <div class="col-6">
+                  <img src="{{ img.imagen.url }}" class="img-fluid rounded shadow-sm gallery-image"
+                       style="height:150px;cursor:pointer;object-fit:cover;"
+                       alt="Foto {{ forloop.counter }}" data-index="{{ forloop.counter0 }}">
+                </div>
+              {% endfor %}
+            </div>
+          {% else %}
+            <div class="text-center py-4">
+              <img src="{% static 'img/image.png' %}" class="img-fluid rounded shadow-sm mb-2" style="max-height:200px;">
+              <p class="text-muted">No hay imágenes disponibles</p>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="col-lg-4">
+      <div class="card shadow-sm border-0 mb-3">
+        <div class="card-body">
+          <h5 class="fw-bold mb-3">Descripción</h5>
+          <p>{{ inmueble.descripcion }}</p>
+        </div>
+      </div>
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="fw-bold mb-3">Contacto</h5>
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-person-circle fs-1 text-primary"></i>
+            <div class="ms-3">
+              <h6>{{ inmueble.propietario.first_name }} {{ inmueble.propietario.last_name }}</h6>
+              <small class="text-muted">Propietario</small>
+            </div>
+          </div>
+          {% if user.is_authenticated and user.tipo_usuario == "ARRENDATARIO" and inmueble.propietario != user %}
+            <a href="{% url 'solicitud_create_for_inmueble' inmueble.pk %}" class="btn btn-primary w-100">
+              <i class="bi bi-envelope me-2"></i> Contactar
+            </a>
+          {% else %}
+            <div class="alert alert-info"><small>Inicia sesión como arrendatario para contactar</small></div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal galería -->
+<div class="modal fade" id="imageModal" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark text-white border-0">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">{{ inmueble.nombre }} – <span id="imageCounter">1</span> / {{ inmueble.imagenes.count }}</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center position-relative p-0">
+        <button class="btn btn-dark position-absolute top-50 start-0 translate-middle-y ms-3 fs-3" id="prevButton"><i class="bi bi-chevron-left"></i></button>
+        <img id="modalImage" src="" class="img-fluid rounded shadow-lg" style="max-height:75vh;object-fit:contain;">
+        <button class="btn btn-dark position-absolute top-50 end-0 translate-middle-y me-3 fs-3" id="nextButton"><i class="bi bi-chevron-right"></i></button>
+      </div>
+      <div class="modal-footer bg-dark justify-content-center flex-wrap border-0">
+        <div id="thumbnailContainer" class="d-flex flex-wrap gap-2">
+          {% for img in inmueble.imagenes.all %}
+            <img src="{{ img.imagen.url }}" class="img-thumbnail thumbnail" 
+                 style="width:70px;height:70px;object-fit:cover;cursor:pointer;" 
+                 data-index="{{ forloop.counter0 }}">
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  let currentImageIndex = 0;
+  const totalImages = {{ inmueble.imagenes.count }};
+  const imageUrls = [{% for img in inmueble.imagenes.all %}"{{ img.imagen.url }}",{% endfor %}];
+  const modalImage = document.getElementById('modalImage');
+
+  function openModal(i){currentImageIndex=i;updateModalImage();new bootstrap.Modal('#imageModal').show();}
+  function updateModalImage(){
+    modalImage.src=imageUrls[currentImageIndex];
+    document.getElementById('imageCounter').textContent=currentImageIndex+1;
+    document.querySelectorAll('.thumbnail').forEach((t,idx)=>t.style.outline=idx===currentImageIndex?'3px solid #0d6efd':'');
+  }
+  function showPrevImage(){currentImageIndex=(currentImageIndex-1+totalImages)%totalImages;updateModalImage();}
+  function showNextImage(){currentImageIndex=(currentImageIndex+1)%totalImages;updateModalImage();}
+
+  document.addEventListener('DOMContentLoaded',()=>{
+    document.querySelectorAll('.gallery-image').forEach(img=>img.onclick=()=>openModal(+img.dataset.index));
+    document.getElementById('prevButton').onclick=showPrevImage;
+    document.getElementById('nextButton').onclick=showNextImage;
+    document.querySelectorAll('.thumbnail').forEach(t=>t.onclick=()=>{currentImageIndex=+t.dataset.index;updateModalImage();});
+    document.addEventListener('keydown',e=>{
+      if(document.getElementById('imageModal').classList.contains('show')){
+        if(e.key==='ArrowLeft')showPrevImage();
+        if(e.key==='ArrowRight')showNextImage();
+      }
+    });
+
+    // Gestos táctiles
+    let startX=0;
+    modalImage.addEventListener('touchstart',e=>startX=e.touches[0].clientX);
+    modalImage.addEventListener('touchend',e=>{
+      let endX=e.changedTouches[0].clientX;
+      if(startX-endX>50) showNextImage();   // swipe izquierda
+      if(endX-startX>50) showPrevImage();   // swipe derecha
+    });
+  });
+</script>
+
+<style>
+  .gallery-image:hover{opacity:.85;transform:scale(1.03);transition:.3s;}
+  .thumbnail:hover{transform:scale(1.1);transition:.2s;}
+</style>
+{% endblock %}

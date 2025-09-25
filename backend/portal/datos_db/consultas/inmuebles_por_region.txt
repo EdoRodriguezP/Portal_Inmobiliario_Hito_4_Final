@@ -1,0 +1,87 @@
+Región: Antofagasta
+  (Sin inmuebles)
+
+Región: Arica y Parinacota
+  (Sin inmuebles)
+
+Región: Atacama
+  (Sin inmuebles)
+
+Región: Aysén del General Carlos Ibáñez del Campo
+  (Sin inmuebles)
+
+Región: Biobío
+  (Sin inmuebles)
+
+Región: Coquimbo
+  (Sin inmuebles)
+
+Región: La Araucanía
+  (Sin inmuebles)
+
+Región: Libertador General Bernardo O'Higgins
+  (Sin inmuebles)
+
+Región: Los Lagos
+  (Sin inmuebles)
+
+Región: Los Ríos
+  (Sin inmuebles)
+
+Región: Magallanes y de la Antártica Chilena
+  (Sin inmuebles)
+
+Región: Maule
+  (Sin inmuebles)
+
+Región: Metropolitana de Santiago
+  (Sin inmuebles)
+
+Región: Ñuble
+  (Sin inmuebles)
+
+Región: Tarapacá
+  - Nombre: Inmueble de prueba 1
+    Descripción: Descripción de prueba para el inmueble 1.
+  - Nombre: Inmueble de prueba 2
+    Descripción: Descripción de prueba para el inmueble 2.
+  - Nombre: Inmueble de prueba 3
+    Descripción: Descripción de prueba para el inmueble 3.
+  - Nombre: Inmueble de prueba 4
+    Descripción: Descripción de prueba para el inmueble 4.
+  - Nombre: Inmueble de prueba 5
+    Descripción: Descripción de prueba para el inmueble 5.
+  - Nombre: Inmueble de prueba 6
+    Descripción: Descripción de prueba para el inmueble 6.
+  - Nombre: Inmueble de prueba 7
+    Descripción: Descripción de prueba para el inmueble 7.
+  - Nombre: Inmueble de prueba 8
+    Descripción: Descripción de prueba para el inmueble 8.
+  - Nombre: Inmueble de prueba 9
+    Descripción: Descripción de prueba para el inmueble 9.
+  - Nombre: Inmueble de prueba 10
+    Descripción: Descripción de prueba para el inmueble 10.
+  - Nombre: Inmueble de prueba 11
+    Descripción: Descripción de prueba para el inmueble 11.
+  - Nombre: Inmueble de prueba 12
+    Descripción: Descripción de prueba para el inmueble 12.
+  - Nombre: Inmueble de prueba 13
+    Descripción: Descripción de prueba para el inmueble 13.
+  - Nombre: Inmueble de prueba 14
+    Descripción: Descripción de prueba para el inmueble 14.
+  - Nombre: Inmueble de prueba 15
+    Descripción: Descripción de prueba para el inmueble 15.
+  - Nombre: Inmueble de prueba 16
+    Descripción: Descripción de prueba para el inmueble 16.
+  - Nombre: Inmueble de prueba 17
+    Descripción: Descripción de prueba para el inmueble 17.
+  - Nombre: Inmueble de prueba 18
+    Descripción: Descripción de prueba para el inmueble 18.
+  - Nombre: Inmueble de prueba 19
+    Descripción: Descripción de prueba para el inmueble 19.
+  - Nombre: Inmueble de prueba 20
+    Descripción: Descripción de prueba para el inmueble 20.
+
+Región: Valparaíso
+  (Sin inmuebles)
+

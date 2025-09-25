@@ -1,0 +1,142 @@
+[
+  {
+    "model": "portal.perfiluser",
+    "pk": 1,
+    "fields": {
+      "username": "arrendador1",
+      "password": "pbkdf2_sha256$260000$test$abcdefghijklmnopqrstuv==",
+      "email": "arr1@example.com",
+      "first_name": "Nombre1",
+      "last_name": "Apellido1",
+      "tipo_usuario": "ARRENDADOR",
+      "rut": "00000001-2",
+      "imagen": "default-profile.avif"
+    }
+  },
+  {
+    "model": "portal.perfiluser",
+    "pk": 2,
+    "fields": {
+      "username": "arrendador2",
+      "password": "pbkdf2_sha256$260000$test$abcdefghijklmnopqrstuv==",
+      "email": "arr2@example.com",
+      "first_name": "Nombre2",
+      "last_name": "Apellido2",
+      "tipo_usuario": "ARRENDADOR",
+      "rut": "00000002-3",
+      "imagen": "default-profile.avif"
+    }
+  },
+  {
+    "model": "portal.perfiluser",
+    "pk": 3,
+    "fields": {
+      "username": "arrendador3",
+      "password": "pbkdf2_sha256$260000$test$abcdefghijklmnopqrstuv==",
+      "email": "arr3@example.com",
+      "first_name": "Nombre3",
+      "last_name": "Apellido3",
+      "tipo_usuario": "ARRENDADOR",
+      "rut": "00000003-4",
+      "imagen": "default-profile.avif"
+    }
+  },
+  {
+    "model": "portal.perfiluser",
+    "pk": 4,
+    "fields": {
+      "username": "arrendador4",
+      "password": "pbkdf2_sha256$260000$test$abcdefghijklmnopqrstuv==",
+      "email": "arr4@example.com",
+      "first_name": "Nombre4",
+      "last_name": "Apellido4",
+      "tipo_usuario": "ARRENDADOR",
+      "rut": "00000004-5",
+      "imagen": "default-profile.avif"
+    }
+  },
+  {
+    "model": "portal.perfiluser",
+    "pk": 5,
+    "fields": {
+      "username": "arrendador5",
+      "password": "pbkdf2_sha256$260000$test$abcdefghijklmnopqrstuv==",
+      "email": "arr5@example.com",
+      "first_name": "Nombre5",
+      "last_name": "Apellido5",
+      "tipo_usuario": "ARRENDADOR",
+      "rut": "00000005-6",
+      "imagen": "default-profile.avif"
+    }
+  },
+  {
+    "model": "portal.perfiluser",
+    "pk": 6,
+    "fields": {
+      "username": "arrendador6",
+      "password": "pbkdf2_sha256$260000$test$abcdefghijklmnopqrstuv==",
+      "email": "arr6@example.com",
+      "first_name": "Nombre6",
+      "last_name": "Apellido6",
+      "tipo_usuario": "ARRENDADOR",
+      "rut": "00000006-7",
+      "imagen": "default-profile.avif"
+    }
+  },
+  {
+    "model": "portal.perfiluser",
+    "pk": 7,
+    "fields": {
+      "username": "arrendador7",
+      "password": "pbkdf2_sha256$260000$test$abcdefghijklmnopqrstuv==",
+      "email": "arr7@example.com",
+      "first_name": "Nombre7",
+      "last_name": "Apellido7",
+      "tipo_usuario": "ARRENDADOR",
+      "rut": "00000007-8",
+      "imagen": "default-profile.avif"
+    }
+  },
+  {
+    "model": "portal.perfiluser",
+    "pk": 8,
+    "fields": {
+      "username": "arrendador8",
+      "password": "pbkdf2_sha256$260000$test$abcdefghijklmnopqrstuv==",
+      "email": "arr8@example.com",
+      "first_name": "Nombre8",
+      "last_name": "Apellido8",
+      "tipo_usuario": "ARRENDADOR",
+      "rut": "00000008-9",
+      "imagen": "default-profile.avif"
+    }
+  },
+  {
+    "model": "portal.perfiluser",
+    "pk": 9,
+    "fields": {
+      "username": "arrendador9",
+      "password": "pbkdf2_sha256$260000$test$abcdefghijklmnopqrstuv==",
+      "email": "arr9@example.com",
+      "first_name": "Nombre9",
+      "last_name": "Apellido9",
+      "tipo_usuario": "ARRENDADOR",
+      "rut": "00000009-1",
+      "imagen": "default-profile.avif"
+    }
+  },
+  {
+    "model": "portal.perfiluser",
+    "pk": 10,
+    "fields": {
+      "username": "arrendador10",
+      "password": "pbkdf2_sha256$260000$test$abcdefghijklmnopqrstuv==",
+      "email": "arr10@example.com",
+      "first_name": "Nombre10",
+      "last_name": "Apellido10",
+      "tipo_usuario": "ARRENDADOR",
+      "rut": "00000010-2",
+      "imagen": "default-profile.avif"
+    }
+  }
+]
